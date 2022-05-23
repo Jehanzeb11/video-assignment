@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(226, 226, 226);
+    }
+    #heading{
+        padding: 50px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    .image{
+        border: 2px solid black;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .btns {
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+    }
+    .btn{
+        margin-top: 20px;
+    }
+    #bulb{
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #container{
+        padding: 50px;
+        border: 2px solid black;
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- _______changing text and background color________ -->
+
+
+        <div id="heading">
+            <h1 id="heading1">Hello!</h1>
+            <h1 id="para">I'm learning JavaScript</h1>
+        </div>
+        <button class="btn btns" onclick="foo()">background color</button>
+        <button class="btn btns" onclick="textColors()">Text color</button>
+
+
+<br><br><br><br>
+
+
+
+<!-- _______changing size of image and display___________ -->
+
+
+
+        <div class="image">
+            <img id="img" src="https://cdn.vox-cdn.com/thumbor/2cKaS6buvgKb570Gt5jfurY8b70=/0x0:1919x1300/1200x800/filters:focal(807x497:1113x803)/cdn.vox-cdn.com/uploads/chorus_image/image/70590943/god_of_war_key_art_01_ps4_us_01nov17.0.jpeg" width="700px">
+            <div class="buttons">
+                <button class="btn" onclick="img('show')">show</button>
+                <button class="btn" onclick="img('hide')">hide</button>
+                <button class="btn" onclick="img('small')">small</button>
+                <button class="btn" onclick="img('big')">big</button>
+            </div>
+        </div>
+
+
+<!-- _______turning on and off a light bulb________ -->
+
+
+
+
+<img src="bulboff.png" id="bulb" onmouseout="off()" onmouseover="bulb()">
+
+
+
+
+
+<!-- _______target all p by tag name________-->
+
+
+
+<div id="container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sunt? Quae saepe dicta ipsa maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sunt? Quae saepe dicta ipsa maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sunt? Quae saepe dicta ipsa maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sunt? Quae saepe dicta ipsa maxime.</p>
+    <button class="btn btns" onclick="paras()">para text</button>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
