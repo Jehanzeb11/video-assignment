@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 15px;
+        }
+        input{
+            margin-top: 10px;
+            padding:5px 12px;
+            font-size: 1rem;
+        }
+        #btn{
+            margin-top: 10px;
+        }
+        #paras{
+            display: none;
+        }
+        #part{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- question 1 -->
+
+
+
+    <div class="container">
+        <h1>Sign-up Form</h1>
+
+            <input id="inp1" type="text" placeholder="enter name">
+            <br>
+            <input id="inp2" type="email" placeholder="enter email">
+            <br>
+            <input id="inp3" type="password" placeholder="enter password">
+            <br>
+            <input id="inp4" type="number" placeholder="enter contact number">
+            <br>
+            <button type="submit" onclick="submit()">Submit form</button>
+
+    </div>
+
+    <hr>
+
+    <section id="paras" class="container">
+        <p id="p1">Your name is </p>
+        <p id="p2">Your email is </p>
+        <p id="p3">your password is </p>
+        <p id="p4">your contact number is </p>
+        <hr>
+    </section>
+
+
+
+    <!-- question 2 -->
+
+    <div class="container">
+        <h1>About Discord</h1>
+        <p>Discord is a VoIP and instant messaging social platform. Users have the ability to communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called "servers
+        </p>
+        <p id="part">[note 1] A server is a collection of persistent chat rooms and voice channels which can be accessed via invite links. Discord runs on Windows, macOS, Android, iOS, iPadOS, Linux, and in web browsers. As of 2021, the service has over 350 million registered users and over 150 million monthly active users</p>
+        <button onclick="read()">Read More</button>
+    </div> 
+    
+    <hr>
+
+
+    <!-- question 3 -->
+    
+    
+    <h1>students data</h1>
+<div class="container">
+   <table id="myTable">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>jehanzeb</td>
+            <td>10</td>
+            <td><button onclick = "editRow(this)">edit</button></td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>jawad</td>
+            <td>10</td>
+            <td><button onclick = "editRow(this)">edit</button></td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>junaid</td>
+            <td>11</td>
+            <td><button onclick = "editRow(this)">edit</button></td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>asif</td>
+            <td>9</td>
+            <td><button onclick = "editeRow(this)">edit</button></td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>hasnain</td>
+            <td>8</td>
+            <td><button onclick = "editRow(this)">edit</button></td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>zohaib</td>
+            <td>9</td>
+            <td><button onclick = "editRow(this)">edit</button></td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>huzaifa</td>
+            <td>7</td>
+            <td><button onclick = "editRow(this)">edit</button></td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>   
+        <tr>
+            <td>7</td>
+            <td>umar</td>
+            <td>12</td>
+            <td><button onclick = "editRow(this)">edit</button></td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>karan</td>
+            <td>11</td>
+            <td><button onclick = "editRow(this)">edit</button></td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>ahsan</td>
+            <td>8</td>
+            <td><button onclick = "editRow(this)">edit</button></td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+<script src="app.js"></script>
+</html>

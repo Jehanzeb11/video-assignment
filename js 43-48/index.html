@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link{
+            font-size: 3rem;
+            margin: 2rem;
+        }
+        .container{
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container img {
+            margin: 0 auto;
+        }
+        h1{
+            margin: 2rem;
+        }
+        input{
+            text-align: center;
+            width: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- question 1 -->
+    <h1>link</h1>
+<a class="link" href="javascript:void(0)" onclick="alert('you clicked')">click here</a>
+
+
+
+
+<!-- question 2 -->
+<h1>mobiles</h1>
+<div class="container">
+    
+    <img onclick="mobiles()" width="200px" src="mob1.jpeg">
+    
+    <img onclick="mobiles()" width="200px" src="mob2.jpeg">
+    
+    <img onclick="mobiles()" width="200px" src="mob3.jpeg">
+    
+    <img onclick="mobiles()" width="200px" src="mob4.jpg">
+</div>
+
+
+
+<!-- question 3 -->
+
+<h1>students data</h1>
+<div class="container">
+   <table id="myTable">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>jehanzeb</td>
+            <td>10</td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>jawad</td>
+            <td>10</td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>junaid</td>
+            <td>11</td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>asif</td>
+            <td>9</td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>hasnain</td>
+            <td>8</td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>zohaib</td>
+            <td>9</td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>huzaifa</td>
+            <td>7</td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>   
+        <tr>
+            <td>7</td>
+            <td>umar</td>
+            <td>12</td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>karan</td>
+            <td>11</td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>ahsan</td>
+            <td>8</td>
+            <td><button onclick = "deleteRow(this)">Delete</button></td>
+        </tr>
+    </table>
+</div>
+
+
+
+<!-- question 4 -->
+<h1>hover on image to change it</h1>
+<div class="container">
+    <img src="https://image.api.playstation.com/cdn/UP0001/CUSA00010_00/NcdBc3F0NrUm8dfOcV4icAX0Txbw2Dan.png" width="500px" onmouseover="imgChange(this)" onmouseout="imgleave(this)">
+</div>
+
+
+
+
+<!-- question 5 -->
+
+
+<div class="container">
+    <button onclick="subValue()">subtract</button>
+    <input type="number" id="inp" value="0">
+    <button onclick="addValue()">addition</button>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
